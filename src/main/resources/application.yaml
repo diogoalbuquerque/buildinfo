@@ -4,3 +4,6 @@ management:
       exposure:
         include:
           - info
+  info:
+    git:
+      mode: full

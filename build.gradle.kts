@@ -28,6 +28,12 @@ springBoot {
     buildInfo()
 }
 
+gitProperties {
+    val keyProperties =
+        listOf("git.branch", "git.commit.time", "git.commit.id.abbrev", "git.commit.user.name", "git.remote.origin.url")
+    keys = keyProperties
+}
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-web")
