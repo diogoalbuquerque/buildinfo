@@ -4,6 +4,8 @@ plugins {
     id("org.springframework.boot") version "2.6.5"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
     id("io.gitlab.arturbosch.detekt") version "1.19.0"
+    //This plugin allows you to add information from the git repository to the info actuator endpoint.
+    id("com.gorylenko.gradle-git-properties") version "2.4.0"
     kotlin("jvm") version "1.6.10"
     kotlin("plugin.spring") version "1.6.10"
 }
